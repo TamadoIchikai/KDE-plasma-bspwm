@@ -1,0 +1,45 @@
+#tabs-container.left, #tabs-subcontainer.left,
+#tabs-container.right, #tabs-subcontainer.right {
+  min-width: 31px;
+  transition: min-width 300ms ease-out !important;
+}
+
+#tabs-container.left:hover, #tabs-subcontainer.left:hover,
+#tabs-container.right:hover, #tabs-subcontainer.right:hover {
+  min-width: 150px !important;
+}
+
+.tabbar-workspace-button {
+  width: 100% !important;
+}
+
+#tabs-tabbar-container.left, #tabs-tabbar-container.right {
+  width: auto !important;
+  min-width: 31px;
+}
+
+.button-toolbar.newtab {
+  left: 0px !important;
+  width: 150px;
+}
+
+/** Make the expanded tabbar float on the webpage. Use with tab-expansion mod. **/
+#main > .inner > div:has(#tabs-tabbar-container:is(.left, .right)) {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  background-color: var(--colorBg);
+  height: 100% !important;
+}
+
+#browser.transparent-tabbar .inner > div:has(#tabs-tabbar-container:is(.left, .right)) {
+  background-color: var(--colorImageFgHeaviest);
+}
+
+.inner #webpage-stack {
+  margin-left: 32px;
+}
+
+.inner:has(#tabs-subcontainer:is(.left, .right)) #webpage-stack {
+  margin-left: 64px;
+}
