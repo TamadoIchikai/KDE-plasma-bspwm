@@ -33,3 +33,4 @@ systemctl mask plasma-kwin_x11.service --user
 ```bash
 sudo wget -O /usr/share/xsessions/plasma-bspwm.desktop https://raw.githubusercontent.com/ChrisTitusTech/BSPWM-on-KDE/main/plasma-bspwm.desktop
 ```
+# III. Things i use
